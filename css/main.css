@@ -1,0 +1,155 @@
+
+html {
+    font-size: 16px;
+}
+
+body {}
+
+/* site-header styles */
+
+.bg-set {
+    background-color: #fff5e7;
+} 
+
+.logo {
+    width: 300px;
+}
+
+.menuLinks a {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.menuLinks a:hover {
+    cursor: pointer;
+    color: red !important;
+    border-bottom: 3px solid red;
+}
+
+/* home page styles */
+
+.home-page {
+    font-size: 1rem;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.section-description {
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+.contactus {
+    width: 200px;
+    text-align: center;
+}
+
+.contactus button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.work-img-container .top-text {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.work-img-container .caption {
+    color: #6b6a6a;
+    padding: 5px 0 0 0;
+}
+
+.work-picture img {
+    border-radius: 5px;
+}
+
+.company-achievements {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+.service-row p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #646363;
+}
+
+#service-location-notice {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #7f7979;
+    
+}
+
+.section-qa h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section-qa h2 {
+    font-size: 1.5rem;
+}
+
+.section-testimonials {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial:nth-child(even) {
+    align-self: flex-end; 
+}
+
+.testimonial:nth-child(even) .avatar-container {
+    order: 5; 
+}
+
+.testimonial:nth-child(even) .testimonial-description, .testimonial:nth-child(even) .testimonial-name {
+    order: 1;
+    text-align: right;
+}
+
+.testimonial:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.testimonial {
+    font-size: 1rem;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.avatar {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPZQ_Z6Jir7-1quljeW8Nea3KQ3uXEVbtQ6w&usqp=CAU');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.testimonial-rating {
+    font-size: 1rem;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
