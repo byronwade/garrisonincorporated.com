@@ -1,8 +1,8 @@
 <?php
 /**
- * MyCustomTheme Theme Customizer
+ * garrisonincorporated Theme Customizer
  *
- * @package MyCustomTheme
+ * @package garrisonincorporated
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function mycustomtheme_customize_register( $wp_customize ) {
+function garrisonincorporated_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function mycustomtheme_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'mycustomtheme_customize_partial_blogname',
+				'render_callback' => 'garrisonincorporated_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'mycustomtheme_customize_partial_blogdescription',
+				'render_callback' => 'garrisonincorporated_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'mycustomtheme_customize_register' );
+add_action( 'customize_register', 'garrisonincorporated_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function mycustomtheme_customize_partial_blogname() {
+function garrisonincorporated_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function mycustomtheme_customize_partial_blogname() {
  *
  * @return void
  */
-function mycustomtheme_customize_partial_blogdescription() {
+function garrisonincorporated_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function mycustomtheme_customize_preview_js() {
-	wp_enqueue_script( 'mycustomtheme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+function garrisonincorporated_customize_preview_js() {
+	wp_enqueue_script( 'garrisonincorporated-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
-add_action( 'customize_preview_init', 'mycustomtheme_customize_preview_js' );
+add_action( 'customize_preview_init', 'garrisonincorporated_customize_preview_js' );

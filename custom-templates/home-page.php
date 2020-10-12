@@ -8,16 +8,16 @@
  * and that other 'pages' on your WordPress site may use a
  * different template.
  *
- * Template Name: Home Page Template
- * 
+ * Template Name: Home Page
+ *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package MyCustomTheme
+ * @package garrisonincorporated
  */
 
 get_header();
 ?>
-<div class="home-page">
+<div class="main-section home-page">
    <div class="row p-4">
       <div class="col-md-7 p-2">
          <h1 class="mt-5 mb-3 section-title"><?php the_field('title');?></h1>

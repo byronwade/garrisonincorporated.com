@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package MyCustomTheme
+ * @package garrisonincorporated
  */
 
 ?>
@@ -22,16 +22,19 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<div class="container bg-set">
+<div id="page" class="site bg-set">
+	<div class="container">
 		<div class="row py-2 site-header">
 			<div class="col-md-3 mb-2 logo">
 			<?php the_header_image_tag(); ?>
 			</div>
 			<div class="col-md-9 my-auto text-md-right menuLinks">
-				<a class="d-inline-block">Home</a>
-				<a class="d-inline-block">Services</a>
-				<a class="d-inline-block">Projects</a>
-				<a class="d-inline-block">Contact Us</a>
+				<?php
+					$defaults = array(
+					'theme_location' => 'top',
+					'menu' => 'Main Menu'
+					);
+					wp_nav_menu($defaults);
+				?>
 			</div>
 		</div>

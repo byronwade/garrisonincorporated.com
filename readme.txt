@@ -1,4 +1,4 @@
-=== MyCustomTheme ===
+=== garrisonincorporated ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called MyCustomTheme.
+A starter theme called garrisonincorporated.
 
 == Description ==
 
@@ -26,7 +26,7 @@ Description
 
 = Does this theme support any plugins? =
 
-MyCustomTheme includes support for WooCommerce and for Infinite Scroll in Jetpack.
+garrisonincorporated includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
@@ -35,5 +35,5 @@ MyCustomTheme includes support for WooCommerce and for Infinite Scroll in Jetpac
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Based on Underscores https://garrisonincorporated.com/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
